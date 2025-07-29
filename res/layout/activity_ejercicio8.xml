@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <CheckBox
+        android:id="@+id/chkFutbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fútbol" />
+
+    <CheckBox
+        android:id="@+id/chkBasquet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Básquetbol" />
+
+    <CheckBox
+        android:id="@+id/chkNatacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Natación" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="24dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/lblSeleccion"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Esperando Selección..."
+            android:padding="8dp"
+            android:background="@android:color/darker_gray"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/btnMostrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mostrar" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnVolver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="300dp"
+        android:text="Regresar al Menú" />
+
+</LinearLayout>

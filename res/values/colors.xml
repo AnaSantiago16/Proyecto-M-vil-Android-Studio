@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <!-- Colores básicos -->
+    <color name="background">#F5F5F5</color>  <!-- Color de fondo claro -->
+    <color name="primaryColor">#6200EE</color> <!-- Color primario (morado Material) -->
+    <color name="white">#FFFFFF</color>        <!-- Blanco puro -->
+
+    <!-- Colores para texto -->
+    <color name="textColorPrimary">#212121</color>  <!-- Texto oscuro -->
+    <color name="textColorHint">#757575</color>     <!-- Texto de hint -->
+
+    <!-- Opcional: Colores adicionales -->
+    <color name="errorColor">#B00020</color>
+    <!-- Rojo para errores -->
+    <color name="colorFondo">#9780B8</color> <!-- celeste claro por ejemplo -->
+
+</resources>
