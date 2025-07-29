@@ -21,7 +21,7 @@ Comenzamos con la implementación de autenticación con validación de credencia
  Ejercicio 1: Login Básico
 
 
-<img width="448" height="667" alt="image" src="https://github.com/user-attachments/assets/20230913-0b16-4441-b939-5a0c9c1aba1a" />
+<img width="248" height="467" alt="image" src="https://github.com/user-attachments/assets/20230913-0b16-4441-b939-5a0c9c1aba1a" />
 
 
  ⚙️ Requisitos Técnicos
