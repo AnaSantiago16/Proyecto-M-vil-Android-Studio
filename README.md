@@ -1,5 +1,5 @@
 
-# Android Skills Portfolio
+#Proyecto Móvil Android Studio
 
  Equipo de Desarrollo
 **Equipo 15**  
