@@ -1,5 +1,4 @@
-
-#Proyecto Móvil Android Studio
+**Proyecto Móvil Android Studio**
 
  Equipo de Desarrollo
 **Equipo 15**  
