@@ -22,7 +22,7 @@ Comenzamos con la implementación de autenticación con validación de credencia
  Ejercicio 1: Botones de visualizar y ocultar
 
 
-<img width="248" height="467" alt="image" src="https://github.com/user-attachments/assets/20230913-0b16-4441-b939-5a0c9c1aba1a" />
+<img width="148" height="367" alt="image" src="https://github.com/user-attachments/assets/20230913-0b16-4441-b939-5a0c9c1aba1a" />
 
 Ejercicio 2: Botones de visualizar y ocultar
 
@@ -45,7 +45,7 @@ Ejercicio 5:
 
 Ejercicio 6:
 
-<img width="73" height="186" alt="image" src="https://github.com/user-attachments/assets/06374b45-1beb-49c9-8348-227aa5dabd06" />
+<img width="173" height="286" alt="image" src="https://github.com/user-attachments/assets/06374b45-1beb-49c9-8348-227aa5dabd06" />
 
 
 Ejercicio 7:
@@ -59,7 +59,7 @@ Ejercicio 8:
 
 Ejercicio 9:
 
-<img width="113" height="254" alt="image" src="https://github.com/user-attachments/assets/0bf4a0dd-e30d-43fc-80d3-c1d08c32138f" />
+<img width="213" height="354" alt="image" src="https://github.com/user-attachments/assets/0bf4a0dd-e30d-43fc-80d3-c1d08c32138f" />
 
 
 Ejercicio 10:
