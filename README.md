@@ -187,32 +187,73 @@ Android Studio: Electric Eel 2022.1.1+
 
 SDK Mínimo: API 26 (Android 8.0)
 
-Estructura del Proyecto
-text
-/app
-  /src/main/java/com/example/proyectomovil/
-    Ejercicio1Activity.java
-    Ejercicio2Activity.java
-    ...
-  /res/layout/
-    activity_ejercicio1.xml
-    activity_ejercicio2.xml
-🚀 Instalación
-Clonar repositorio:
 
-bash
-git clone https://github.com/tu-usuario/android-skills-portfolio.git
-Abrir en Android Studio
+Aquí tienes el apartado **🚀 Instalación** con mejor formato y claridad para que sea fácil de seguir:
 
-Ejecutar en emulador con API 26+
+---
+
+## 🚀 Instalación
+
+### ✅ Requisitos Previos:
+
+* Tener **Android Studio** instalado.
+* JDK 8 o superior configurado.
+* Emulador o dispositivo físico con Android 5.0 o superior.
+
+### 🧭 Pasos para instalar y ejecutar:
+
+1. **Clonar el repositorio:**
+
+   ```bash
+   git clone https://github.com/tu_usuario/tu_proyecto.git
+   ```
+
+2. **Abrir el proyecto en Android Studio:**
+
+   * Abrir Android Studio.
+   * Seleccionar **"Open an existing project"**.
+   * Navegar a la carpeta del proyecto clonado.
+
+3. **Esperar a que gradle sincronice:**
+
+   * Android Studio descargará las dependencias automáticamente.
+   * Si hay errores, revisar el archivo `build.gradle` (nivel app y proyecto).
+
+4. **Agregar librerías .jar si aplica:**
+
+   * Si el proyecto utiliza librerías externas, agrégalas en:
+
+     ```
+     app/libs/
+     ```
+
+     Y luego en `build.gradle (Module: app)`:
+
+     ```gradle
+     implementation files('libs/nombre_libreria.jar')
+     ```
+
+5. **Ejecutar la aplicación:**
+
+   * Conectar un dispositivo o abrir un emulador.
+   * Presionar **Run (Shift + F10)** o usar el botón ▶️ en Android Studio.
+
+6. **(Opcional) Configurar permisos o ajustes en el Manifest:**
+
+   * Revisa si hay permisos que deben otorgarse manualmente desde:
+
+     ```xml
+     AndroidManifest.xml
+     ```
+
+---
+
+
 
 📌 Nota: Todos los ejercicios usan componentes estándar de Android sin dependencias externas.
-
-text
 
 ### Recomendaciones adicionales:
 1. Para ejercicios con cálculos (Ej5), considera usar `BigDecimal` para precisión monetaria
 2. En selección múltiple (Ej8), implementa `CompoundButton.OnCheckedChangeListener`
 3. Para el Ej10, usa `setOnItemClickListener` en el ListView
 
-¿Necesitas que desarrolle algún ejercicio específico con más detalle o prefieres el código completo de alguna Activity en particular?
