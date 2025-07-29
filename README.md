@@ -1,41 +1,28 @@
 
 # Android Skills Portfolio
 
-## Equipo de Desarrollo
-**Equipo #5**  
+ Equipo de Desarrollo
+**Equipo 15**  
 👥 Integrantes:
-- Ana García - Desarrolladora Frontend  
-- Carlos Méndez - Arquitecto de Software  
-- Sofía Ramírez - Diseñadora UX/UI  
+ Ana Belen Santiago Pérez - Desarrolladora y Diseñadora UX/UI  
 
-## Descripción del Proyecto
+ Descripción del Proyecto
 📱 **Tipo de Sistema**: Proyecto Móvil en Java (Android Studio)  
 🔧 **Librería Externa**: Glide (para carga de imágenes)  
 
-Aplicación educativa que demuestra 10 habilidades esenciales de desarrollo Android mediante ejercicios prácticos, incluyendo:
+Aplicación  que demuestra 10 habilidades esenciales de desarrollo Android mediante ejercicios prácticos, incluyendo:
 - Autenticación segura  
 - Navegación entre actividades  
 - Manejo de layouts avanzados  
 
----
 
-## 🏆 Ejercicios Incluidos
+ 🏆 Ejercicios Incluidos
 
-### Ejercicio 1: Login Seguro  
-![Captura Login](screenshots/login.png)  
-Implementación de autenticación con validación de campos (correo: `tap2025@example.com`, contraseña: `tap*2025`).
 
-### Ejercicio 2: RecyclerView con Glide  
-![Captura Lista](screenshots/recycler.png)  
-Lista interactiva de elementos con imágenes cargadas desde URL usando Glide.
 
-*(Continúa hasta Ejercicio 10 con formato similar)*
+ ⚙️ Requisitos Técnicos
 
----
-
-## ⚙️ Requisitos Técnicos
-
-### Versión Mínima
+ Versión Mínima
 - **SDK Mínimo**: API 24 (Android 7.0 Nougat)  
 - **Gradle**: 7.4+  
 
@@ -55,12 +42,11 @@ dependencies {
 
 ---
 
-## 🚀 Instalación
+🚀 Instalación
 
 1. **Clonar repositorio**:
-   ```bash
+
    git clone https://github.com/tu-usuario/android-skills-portfolio.git
-   ```
 
 2. **Abrir en Android Studio**:
    - File > Open > Seleccionar carpeta del proyecto
@@ -80,5 +66,5 @@ dependencies {
 
 ---
 
-📌 **Nota**: Requiere Android Studio Flamingo (2022.2.1) o superior para óptimo funcionamiento.
+📌 **Nota**: Requiere Android Studio  (2022.2.1) o superior para óptimo funcionamiento.
 ``` 
