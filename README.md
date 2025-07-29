@@ -14,10 +14,14 @@ Aplicación  que demuestra 10 habilidades esenciales de desarrollo Android media
 - Autenticación segura  
 - Navegación entre actividades  
 - Manejo de layouts avanzados  
+Comenzamos con la implementación de autenticación con validación de credenciales estáticas (correo: tap2025@example.com, contraseña: tap*2025). Uso de EditText con validación en tiempo real.
 
 
  🏆 Ejercicios Incluidos
+ Ejercicio 1: Login Básico
 
+
+<img width="448" height="667" alt="image" src="https://github.com/user-attachments/assets/20230913-0b16-4441-b939-5a0c9c1aba1a" />
 
 
  ⚙️ Requisitos Técnicos
