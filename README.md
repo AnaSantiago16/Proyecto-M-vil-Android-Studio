@@ -19,102 +19,157 @@ Comenzamos con la implementación de autenticación con validación de credencia
 
  🏆 Ejercicios Incluidos
  
- Ejercicio 1: Botones de visualizar y ocultar
-
+ Ejercicio 1: Visibilidad de Componentes  
 
 <img width="148" height="367" alt="image" src="https://github.com/user-attachments/assets/20230913-0b16-4441-b939-5a0c9c1aba1a" />
 
-Ejercicio 2: Botones de visualizar y ocultar
+**Funcionalidad**:  
+- 2 TextView (nombre y ciudad)  
+- 4 botones para controlar visibilidad  
+- Uso de `setVisibility(View.VISIBLE/INVISIBLE)`  
+
+**Código clave**:
+
+btnOcultarNombre.setOnClickListener(v -> lblNombre.setVisibility(View.INVISIBLE));
+btnVisuNombre.setOnClickListener(v -> lblNombre.setVisibility(View.VISIBLE));
+
+
+Ejercicio 2: Transferencia de Texto
 
 <img width="159" height="333" alt="image" src="https://github.com/user-attachments/assets/9910ce6f-2c38-402d-810b-b6731927bc39" />
 
-Ejercicio 3:
+Funcionalidad:
 
+1 EditText para entrada
+
+2 TextView para salida
+
+2 botones para copiar texto
+
+Uso de getText() y setText()
+
+Código clave:
+
+java
+btnTraspasa1.setOnClickListener(v -> lblTexto1.setText(txtTexto.getText()));
+
+
+Ejercicio 3: Transferencia de Texto en Tiempo Real  
 <img width="170" height="362" alt="image" src="https://github.com/user-attachments/assets/61518d79-8366-422c-b146-9902fdfcd9da" />
 
 
-Ejercicio 4:
+- **Componentes**: 
+  - `EditText` (txtTexto) 
+  - `TextView` (lblTexto)
+  - `Button` (btnVaciar)
+- **Lógica**: 
+
+  txtTexto.addTextChangedListener(new TextWatcher() {
+      public void afterTextChanged(Editable s) {
+          lblTexto.setText(s.toString());
+      }
+  });
+Ejercicio 4: Formulario con Validación
 
 <img width="129" height="361" alt="image" src="https://github.com/user-attachments/assets/b5e10d21-161a-472f-8019-5694d692688f" />
 
 
-Ejercicio 5:
 
+Funcionalidades:
+
+Concatenación de strings: "Usted se llama " + nombre + " y vive en " + ciudad
+
+Activación/desactivación de campos con setEnabled(false)
+
+Ejercicio 5: Calculadora de Ventas
 
 <img width="130" height="313" alt="image" src="https://github.com/user-attachments/assets/7846fb17-5ddc-426c-acde-6b0c84ef808a" />
 
-Ejercicio 6:
 
+Cálculos:
+
+java
+double total = unidades * precio;
+double iva = total * 0.16;
+lblTotalMasIva.setText(String.format("$%.2f", total + iva));
+
+
+Ejercicio 6: Evento Click Básico
 <img width="173" height="286" alt="image" src="https://github.com/user-attachments/assets/06374b45-1beb-49c9-8348-227aa5dabd06" />
 
 
-Ejercicio 7:
+Implementación de OnClickListener para cambiar texto de TextView
+
+Ejercicio 7: Cambio de Color de Fondo
 
 <img width="110" height="263" alt="image" src="https://github.com/user-attachments/assets/d25eb3d4-2a4d-4763-bee5-b95234ae5b3d" />
 
-Ejercicio 8:
 
+Uso de setBackgroundColor(Color.RED) y selector de colores
+
+Ejercicio 8: Selección Múltiple (CheckBox)
 <img width="173" height="346" alt="image" src="https://github.com/user-attachments/assets/4c1a17ea-0155-4da5-a320-3289fde9e642" />
 
 
-Ejercicio 9:
+Lógica para concatenar selecciones:
 
+java
+StringBuilder seleccion = new StringBuilder();
+if (cbFutbol.isChecked()) seleccion.append("Fútbol ");
+
+
+Ejercicio 9: Selección Única (RadioGroup)
 <img width="213" height="354" alt="image" src="https://github.com/user-attachments/assets/0bf4a0dd-e30d-43fc-80d3-c1d08c32138f" />
 
 
-Ejercicio 10:
+Configuración en XML:
 
+xml
+<RadioGroup>
+    <RadioButton android:text="Opción 1"/>
+    <RadioButton android:text="Opción 2" android:checked="true"/>
+</RadioGroup>
+
+Ejercicio 10: Lista Seleccionable
 <img width="171" height="278" alt="image" src="https://github.com/user-attachments/assets/60b12ebf-c7f9-4fa0-961a-83722ba2f012" />
 
 
+Adaptador personalizado para ListView:
 
+java
+ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, ciudades);
+⚙️ Configuración Técnica
+Requisitos Mínimos
+Android Studio: Electric Eel 2022.1.1+
 
+SDK Mínimo: API 26 (Android 8.0)
 
- ⚙️ Requisitos Técnicos
-
- Versión Mínima
-- **SDK Mínimo**: API 24 (Android 7.0 Nougat)  
-- **Gradle**: 7.4+  
-
-### Dependencias (`build.gradle`):
-```gradle
-dependencies {
-    implementation 'com.github.bumptech.glide:glide:4.14.2'
-    implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'com.google.android.material:material:1.9.0'
-}
-```
-
-### Buenas Prácticas Implementadas
-✔️ Nomenclatura descriptiva (`btnLogin` vs `button1`)  
-✔️ Comentarios breves en métodos complejos  
-✔️ Separación de recursos (strings.xml, colors.xml)  
-
----
-
+Estructura del Proyecto
+text
+/app
+  /src/main/java/com/example/proyectomovil/
+    Ejercicio1Activity.java
+    Ejercicio2Activity.java
+    ...
+  /res/layout/
+    activity_ejercicio1.xml
+    activity_ejercicio2.xml
 🚀 Instalación
+Clonar repositorio:
 
-1. **Clonar repositorio**:
+bash
+git clone https://github.com/tu-usuario/android-skills-portfolio.git
+Abrir en Android Studio
 
-   git clone https://github.com/tu-usuario/android-skills-portfolio.git
+Ejecutar en emulador con API 26+
 
-2. **Abrir en Android Studio**:
-   - File > Open > Seleccionar carpeta del proyecto
+📌 Nota: Todos los ejercicios usan componentes estándar de Android sin dependencias externas.
 
-3. **Sincronizar dependencias**:
-   - Click en "Sync Now" al aparecer el aviso de Gradle
+text
 
-4. **Ejecutar en emulador/dispositivo**:
-   - Seleccionar dispositivo virtual  
-   - Click en ▶️ "Run 'app'"  
+### Recomendaciones adicionales:
+1. Para ejercicios con cálculos (Ej5), considera usar `BigDecimal` para precisión monetaria
+2. En selección múltiple (Ej8), implementa `CompoundButton.OnCheckedChangeListener`
+3. Para el Ej10, usa `setOnItemClickListener` en el ListView
 
-5. **(Opcional) Librerías manuales**:
-   - Si usa .jar locales, copiarlas a `app/libs/` y agregar en `build.gradle`:
-   ```gradle
-   implementation files('libs/tu_libreria.jar')
-   ```
-
----
-
-📌 **Nota**: Requiere Android Studio  (2022.2.1) o superior para óptimo funcionamiento.
-``` 
+¿Necesitas que desarrolle algún ejercicio específico con más detalle o prefieres el código completo de alguna Activity en particular?
